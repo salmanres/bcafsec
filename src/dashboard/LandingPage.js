@@ -1,14 +1,12 @@
 import React, { Fragment } from "react";
 import Navbar from "./navigation/Navbar";
-import HomePage from "./HomePage";
+import { Outlet } from "react-router-dom";
 
 function LandingPage(){
     return(
         <Fragment>
-            <Navbar />
-            <HomePage />
-            <h1>landing Page</h1>
-            <p>this is a landing page</p>
+           <Navbar />
+           <Outlet />
         </Fragment>
     )
 };
